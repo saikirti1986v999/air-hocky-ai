@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Hockey</title>
     <style>
         * {
             padding: 0;
             margin: 0;
+            font-size: 0.8em; /* Set font size to 0.8em */
         }
 
         canvas {
@@ -48,7 +49,7 @@
             <option value="mouse">Mouse</option>
         </select>
         <button onclick="removeStuckBall()">Remove Stuck Ball</button>
-        </div>
+    </div>
     <script>
         var canvas = document.getElementById('canvas');
         var popup = document.getElementById('winningPopup');
