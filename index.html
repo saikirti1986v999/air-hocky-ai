@@ -262,7 +262,7 @@
 
         function moveAI() {
             var distanceToBall = distance(cMallet.x, cMallet.y, ball.x, ball.y);
-            var aiSpeed = 1+ Math.min(distanceToBall / 70, 5);
+            var aiSpeed = 1 + Math.min(distanceToBall / 70, 5);
 
             if (cMallet.x < ball.x) {
                 cMallet.x += aiSpeed;
