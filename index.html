@@ -67,7 +67,7 @@
         var x_max = 460;
         var y_min = 30;
         var y_max = 600;
-        var friction = 0.9;
+        var friction = 1.0;
         var winningScore = 5;
 
         canvas.addEventListener("mousemove", mouseMoveHandler, false);
@@ -262,7 +262,7 @@
 
         function moveAI() {
             var distanceToBall = distance(cMallet.x, cMallet.y, ball.x, ball.y);
-            var aiSpeed = 2 + Math.min(distanceToBall / 50, 3);
+            var aiSpeed = 4+ Math.min(distanceToBall / 50, 3);
 
             if (cMallet.x < ball.x) {
                 cMallet.x += aiSpeed;
